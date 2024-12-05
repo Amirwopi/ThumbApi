@@ -47,6 +47,7 @@ def upload(episodeId):
     return {"medium": data[0], "large": data[1]}
 
 
+
 @app.route("/thumb/<episodeId>")
 def thumbnail(episodeId):
     url = f"https://thumb-api-lmdf-lrhjluune-amirwopis-projects.vercel.app/gen/{episodeId}_thumb"
